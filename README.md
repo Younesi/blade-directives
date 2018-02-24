@@ -8,7 +8,7 @@ See https://laravel.com/docs/blade
 
 Installation:
 
-`$ composer require saritasa/blade-directives`
+`$ composer require younesi/blade-directives`
 
 
 ## Available directives:
