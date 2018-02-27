@@ -11,8 +11,6 @@ Installation:
 
 
 ## Available directives:
-'0'=>'۰','1'=>'۱','2'=>'۲','3'=>'۳','4'=>'۴',
-                        '5'=>'۵','6'=>'۶','7'=>'۷','8'=>'۸','9'=>'۹'
 
 
 ### @persianNum 
@@ -21,6 +19,22 @@ _convert latin numbers to their persian equvalent_
 ```
 @persianNum('Persian Numbers 9123456780 اعداد فارسی')
    //will produce "Persian Numbers ۹۱۲۳۴۵۶۷۸۰ اعداد فارسی"
+```
+
+###@istrue
+_Only show when $variable isset and true_
+```
+@istrue($variable)
+   This will be echoed
+@endistrue
+```
+
+###@isfalse
+_Same as @istrue but checks for isset and false_
+```
+@isfalse($variable)
+   if $variable is False hhis will be echoed
+@endisfalse
 ```
 
 ### @dd 
