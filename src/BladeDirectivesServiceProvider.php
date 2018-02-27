@@ -212,7 +212,7 @@ class BladeDirectivesServiceProvider extends ServiceProvider
      * @param $expression
      * @return string
      */
-    protected function extendFarsiNum($expression)
+    protected function extendPersianNum($expression)
     {
          $array = [ '0'=>'۰','1'=>'۱','2'=>'۲','3'=>'۳','4'=>'۴',
                         '5'=>'۵','6'=>'۶','7'=>'۷','8'=>'۸','9'=>'۹'
@@ -263,7 +263,7 @@ class BladeDirectivesServiceProvider extends ServiceProvider
      */
     protected function extendHrefUrl($expression)
     {
-        return "<?php echo 'href=\"'.url($expression).'\"'; ?>";
+        return "<?php echo dd() ?>";
     }
 
     /**
@@ -308,6 +308,28 @@ class BladeDirectivesServiceProvider extends ServiceProvider
     protected function extendActionAsset($expression)
     {
         return "<?php echo 'action=\"'.asset($expression).'\"'; ?>";
+    }
+
+     /**
+     * dump an expression
+     *
+     * @param $expression
+     * @return string
+     */
+    protected function extendDump($expression)
+    {
+        return "<?php echo dump($expression); ?>";
+    }
+
+    /**
+     * dump an expression
+     *
+     * @param $expression
+     * @return string
+     */
+    protected function extendDd($expression)
+    {
+        return "<?php echo dd($expression); ?>";
     }
 
     /**
@@ -366,7 +388,7 @@ class BladeDirectivesServiceProvider extends ServiceProvider
     }
 
     /**
-     * If yroute action evalutes to true
+     * If route's action evalutes to true
      *
      * @param $expression
      * @return bool

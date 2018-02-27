@@ -1,4 +1,6 @@
-# laravel-aparat
-Laravel Facade/Wrapper for the Aparat  API
+# PHP Blade Directives
 
-I'm going to explain what's happaning here...
+Laravel Custom Blade directives for Laravel Applications.
+
+
+
