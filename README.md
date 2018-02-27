@@ -21,20 +21,40 @@ _convert latin numbers to their persian equvalent_
    //will produce "Persian Numbers ۹۱۲۳۴۵۶۷۸۰ اعداد فارسی"
 ```
 
-###@istrue
+### @istrue
 _Only show when $variable isset and true_
+
 ```
 @istrue($variable)
    This will be echoed
 @endistrue
 ```
 
-###@isfalse
+### @isfalse
 _Same as @istrue but checks for isset and false_
+
 ```
 @isfalse($variable)
    if $variable is False hhis will be echoed
 @endisfalse
+```
+
+### @isnull
+_Only show when $variable is null_
+
+```
+@isnull($variable)
+   This will be echoed
+@endisnull
+```
+
+### @isnotnull
+_Same as @isnull but one shows when $variable is not null_
+
+```
+@isnotnull($variable)
+   This will be echoed
+@endisnotnull
 ```
 
 ### @dd 
